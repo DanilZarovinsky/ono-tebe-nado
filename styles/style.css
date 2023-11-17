@@ -1,1 +1,386 @@
-/* место для вашего кода */
+.body {
+  width: 1440px;
+  height: 2844px;
+}
+.pixel-perfect-image {
+  overflow: visible;
+  width: 1440px;
+  height: 2844px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  filter: sepia(0.6);
+  z-index: 6;
+}
+
+.header {
+  margin: 93px auto 0 auto;
+  display: grid;
+  grid-template-columns: 2.5fr 2.1fr 1fr;
+  align-items: center;
+  width: 1340px;
+}
+
+.header-menu {
+  list-style: circle;
+  display: flex;
+  font-size: 18px;
+}
+
+.header-links-list-item-no-bullit {
+  list-style: none;
+}
+.header-menu li:not(:first-child) {
+  margin-left: 32px;
+}
+
+.header-address {
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+}
+
+.logo-black {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.link-tel {
+  text-decoration: none;
+  border-bottom: 1px black solid;
+}
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  min-height: 757px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.h1 {
+  text-transform: uppercase;
+  padding-top: 165px;
+  width: 1340px;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: white;
+  margin: 92px 0 0 50px;
+  font-style: normal;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.h1-span1 {
+  display: block;
+  line-height: 115%;
+}
+
+.h1-span2 {
+  display: block;
+  text-align: center;
+  letter-spacing: 25px;
+  margin: 20px 0 20px 0;
+}
+
+.h1-span3 {
+  display: block;
+  text-align: end;
+}
+
+.h1-no {
+  letter-spacing: 60px;
+}
+
+.h1-be {
+  letter-spacing: 55px;
+}
+
+.h1-ad {
+  letter-spacing: 30px;
+}
+
+.h1-n {
+  letter-spacing: 60px;
+}
+
+.cover-div {
+  position: relative;
+  width: 100%;
+  text-align: end;
+  margin-top: 135px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+}
+
+.cover-text {
+  color: white;
+  word-spacing: 19px;
+  font-size: 22px;
+  line-height: 28px;
+  width: 100%;
+  padding-right: 72px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.cover-button {
+  font-size: 22px;
+  color: white;
+  flex-shrink: 0;
+  text-align: end;
+  background-color: transparent;
+  border: 1px solid;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  margin-right: 50px;
+}
+
+.cover-button a {
+  text-decoration: none;
+}
+
+.lots {
+  flex-grow: 1;
+  margin: 180px 50px 0 50px;
+}
+
+.lots-heading {
+  padding: 0 0 35px 40px;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.lots-card-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 25px;
+}
+
+.card-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  display: block;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  margin: 50px auto 0 auto;
+  font-weight: 700;
+  width: 350px;
+  text-align: start;
+}
+
+.card-text {
+  display: block;
+  width: 350px;
+  text-align: start;
+  margin: 0 auto 50px auto;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: normal;
+}
+
+.card-type {
+  width: 430px;
+  height: 450px;
+  color: white;
+  position: relative;
+}
+
+.card-type-film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 450px;
+}
+
+.card-type-film .card-text {
+  margin-top: 202px;
+}
+
+.card-type-book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 450px;
+}
+
+.card-type-book .card-text {
+  margin-top: 30px;
+}
+
+.card-type-picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  min-width: 430px;
+  flex-basis: 430px;
+  flex-grow: 3;
+}
+
+.card-type-picture .card-text {
+  margin-top: 80px;
+}
+
+.card-type::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.see-more {
+  font-size: 20px;
+  padding: 31px 0 0 40px;
+}
+
+.about {
+  width: 1340px;
+  margin: 181px auto 0 auto;
+  display: grid;
+  grid-template-columns: 430px auto;
+  gap: 25px;
+}
+
+.column-logo-white {
+  display: flex;
+  width: 430px;
+  height: 240px;
+  padding: 0px 95px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-logo-white {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-white {
+  display: block;
+  width: 148px;
+  height: 114px;
+  margin: auto;
+}
+
+.about-column-text {
+  display: inline-flex;
+  height: 388px;
+  margin-top: 99px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+.about-text {
+  display: grid;
+  gap: 25px;
+}
+
+.h3-about {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-span-text {
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  width: 1340px;
+  margin: 180px auto 0 auto;
+  justify-content: space-between;
+}
+
+.footer-addres {
+  font-style: normal;
+}
+
+.contacts {
+  width: 240px;
+  height: 97px;
+  line-height: 24px;
+}
+
+.contacts li {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu {
+  width: 149px;
+  height: 64px;
+}
+
+.menu li {
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 48px;
+}
+
+.socials img {
+  height: 100%;
+  width: auto;
+}
