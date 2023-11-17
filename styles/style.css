@@ -2,18 +2,6 @@
   width: 1440px;
   height: 2844px;
 }
-.pixel-perfect-image {
-  overflow: visible;
-  width: 1440px;
-  height: 2844px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  filter: sepia(0.6);
-  z-index: 6;
-}
 
 .header {
   margin: 93px auto 0 auto;
